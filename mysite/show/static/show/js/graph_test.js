@@ -471,7 +471,7 @@ function readTextFile(url, callback) {
 
 /* 실행 */
 new Promise(() => {
-  readTextFile("show/al_json", function (text) {
+  readTextFile("al_json", function (text) {
     console.log(text);
     json_data = JSON.parse(text);
     get_env_info();
