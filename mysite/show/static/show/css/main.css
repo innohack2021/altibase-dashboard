@@ -1,0 +1,431 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'YdestreetL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/YdestreetL.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* typography */
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+}
+/* Main Video */
+#bgvideo
+{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* Main Page Layout */
+.container{
+    width: 1170px;
+    padding-top: 300px;
+    margin: 0 auto;
+}
+
+.header nav{
+    position: fixed;
+    left: 0; right:0; top:0;
+    padding: 0 47px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.header nav .logo span{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin-left: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.header nav ul{
+    margin-left: 10%;
+    max-width: 1170px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}   
+
+.header nav ul li{
+    margin-left: 46px;
+}
+
+.header nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.fixed-nav {
+    position: fixed; 
+    left:50%; 
+    z-index: 999;
+    top:45%;
+    margin-left: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fixed-nav a{
+    text-indent: -9999em;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    background: none;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+.fixed-nav a:last-child{
+    margin-bottom: 0;
+}
+.fixed-nav a.active{
+    border: none;
+    background: #fff;
+}
+.slogan{
+    font-family: 'Y_Spotlight', sans-serif;
+    margin-left: 100px;
+    margin-bottom: 100px;
+ }
+ 
+.slogan h2{
+    font-size: 95px;
+    line-height: 90px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+.slogan p{
+    font-family: 'YdestreetL', sans-serif;
+    color: rgb(212, 209, 209);
+    margin:15px 0 38px;
+}
+
+
+/* PPT Page Slide */
+.ppt {
+    width: 100vw;
+    height: 100vh;
+}
+.slide.ppt.slide1{
+    background-image: url('../images/try.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.slide.ppt.slide2{
+    background-image: url('../images/slide2.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide.ppt.slide3{
+    background-image: url('../images/slide3.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents{
+    width: 868px;
+    text-align:center;
+}
+
+.contents h2{
+    font-size: 65px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.contents p{
+    margin: 27px 0 40px;
+    color:#fff; 
+}
+
+.title_bar{
+    position: relative;
+}
+.title_bar::before{
+    content:'';
+    position: absolute;
+    height: 2px;
+    width: 200px;
+    background: #fff;
+    bottom:150%;
+}
+.title_bar.center::before{
+    left:50%;
+    transform: translateX(-50%);
+}
+.title_bar.left::before{
+    left:0;
+}
+/* Thread_32 Graph + Thread_64 Graph */
+.graph-header{
+    position: absolute;
+    margin-left: 5%;
+    font-size: 60px;
+    top: 100px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+.graph-table{
+    position: absolute;
+    margin-left: 65%;
+    font-size: 18px;
+    top: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+table{
+    border-spacing: 15px;
+    border-collapse: separate;
+}
+#table_label{
+    font-size: 25px;
+}
+#table_label_top{
+    font-size: 25px;
+    background-color: #323248;
+    border-radius: 5px;
+}
+.thread
+{
+     background-color: #151521;
+}
+.chart_frame
+{
+    display: flex;    
+    overflow: hidden;
+    justify-content: center;
+    margin-top:3%;
+}
+
+.chart_sql
+{
+    background: #1e1e2d;
+    border-radius: 10px;
+    width: 80rem;
+}
+
+.chart_cpu_ram_frame
+{
+    margin-left: 3rem;
+}
+.chart_cpu 
+{
+    background: #1e1e2d;
+    border-radius: 10px;
+    width: 30rem;
+    height: 20rem; 
+    margin-bottom:2rem;
+
+}
+
+.chart_memory
+{
+    background: #1e1e2d;
+    border-radius: 10px;
+    width: 30rem;
+    height: 20rem;
+}
+
+.chart_avr
+{
+    justify-content: center;
+    display: flex;
+    background: #1e1e2d;
+    border-radius: 10px;
+    width: 113rem;
+}
+.button_up.frame
+{
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.button_down.frame
+{
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+:root {
+    --button-color: #ffffff;
+    --button-bg-color: #7948dd;
+    --button-hover-bg-color: #7948dd;
+  }
+input {
+
+    margin: 0 10px;
+    padding: 0.5rem 1rem;
+    color: #e6e6e7;
+    background-color: #323248;
+  
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+  
+    display: inline-block;
+    width: auto;
+  
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    cursor: pointer;
+  
+    transition: 0.5s;
+}
+
+input:active,
+input:hover,
+input:focus {
+  background: var(--button-hover-bg-color);
+  outline: 0;
+}
+button:disabled {
+  opacity: 0.5;
+}
+
+/* Footer Page */
+.footer{
+    padding:86px 0 60px;
+}
+
+.footer_menu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 78px;
+}
+
+.footer_menu li{
+    margin: 0 25px;
+}
+
+.footer_menu li a{
+    font-weight: 900;
+    color:#030227;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 18px;
+}
+
+.footer_menu li a:hover{
+    color: rgb(255, 0, 0);
+}
+
+.social_menu{
+    display: flex;
+    justify-content: center;
+}
+
+.social_menu li{
+    margin: 0 6px;
+}
+
+.social_menu li a{
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    border: 1px solid #030227;
+    background: #fff;
+    text-align: center;
+    line-height: 47px;
+    display: block;
+    color: #030227;
+    font-size: 16px;
+}
+
+.copyright{
+    margin-top: 17px;
+    text-align: center;
+    color: #030227;
+    font-size: 16px;
+}
+
+
+.slide{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.slide.ppt.slide1{
+    background-image: url('../images/slide1.png');
+}
+.slide.ppt.slide2{
+    background-image: url('../images/slide2.png');
+}
+.slide.ppt.slide3{
+    background-image: url('../images/slide3.png');
+}
+.slide.ppt.slide4{
+    background-image: url('../images/slide4.png');
+}
+.slide.ppt.slide5{
+    background-image: url('../images/slide5.png');
+}
+.slide.ppt.slide6{
+    background-image: url('../images/slide6.png');
+}
+.slide.ppt.slide7{
+    background-image: url('../images/slide7.png');
+}
+.slide.ppt.slide8{
+    background-image: url('../images/slide8.png');
+}
+.slide.ppt.slide9{
+    background-image: url('../images/slide9.png');
+}
+.slide.ppt.slide10{
+    background-image: url('../images/slide10.png');
+}
+.slide.ppt.slide11{
+    background-image: url('../images/slide11.png');
+}
+.slide.ppt.slide12{
+    background-image: url('../images/slide12.png');
+}
+.slide.ppt.slide13{
+    background-image: url('../images/slide13.png');
+}
