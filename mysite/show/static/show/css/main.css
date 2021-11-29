@@ -201,7 +201,7 @@ body{
 .graph-table{
     position: absolute;
     margin-left: 65%;
-    font-size: 18px;
+    font-size: 1rem;
     top: 20px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -216,11 +216,13 @@ table{
 #table_label{
     font-size: 25px;
 }
+
 #table_label_top{
     font-size: 25px;
     background-color: #323248;
     border-radius: 5px;
 }
+
 .thread
 {
      background-color: #151521;
@@ -230,7 +232,9 @@ table{
     display: flex;    
     overflow: hidden;
     justify-content: center;
-    margin-top:3%;
+    margin-top:2%;
+    margin-left: 4%;
+    width: 90%;
 }
 
 .chart_sql
@@ -264,14 +268,17 @@ table{
 
 .chart_avr
 {
+    margin-top: 10rem;
     justify-content: center;
     display: flex;
     background: #1e1e2d;
     border-radius: 10px;
-    width: 113rem;
+    width: 80rem;
+
 }
 .button_up.frame
 {
+    margin-top: 10rem;
     justify-content: center;
     margin-bottom: 20px;
     text-align: center;
@@ -282,6 +289,7 @@ table{
 }
 .button_down.frame
 {
+
     justify-content: center;
     text-align: center;
     text-decoration: none;
@@ -302,7 +310,7 @@ input {
     background-color: #323248;
   
     font-family: 'Lato', sans-serif;
-    font-size: 2rem;
+    font-size: 1em;
     font-weight: 400;
     text-align: center;
     text-decoration: none;
@@ -428,4 +436,16 @@ button:disabled {
 }
 .slide.ppt.slide13{
     background-image: url('../images/slide13.png');
+}
+.slide.ppt.slide14{
+    background-image: url('../images/slide14.png');
+}
+.slide.ppt.slide15{
+    background-image: url('../images/slide15.png');
+}
+.slide.ppt.slide16{
+    background-image: url('../images/slide16.png');
+}
+.slide.ppt.slide17{
+    background-image: url('../images/slide17.png');
 }

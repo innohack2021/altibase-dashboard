@@ -388,7 +388,7 @@ function draw_chart_avr(thread) {
       plugins: {
         title: {
           display: true,
-          text: thread,
+          text: thread + ' average',
           color: 'white',
           font: {
             family: 'Comic Sans MS',
@@ -447,19 +447,12 @@ function get_env_info()
 {
   document.getElementById('ver71_os_32').innerHTML = json_data['scale0.1']['ver71']['info']['OS'];
   document.getElementById('ver71_version_32').innerHTML = json_data['scale0.1']['ver71']['info']['ALTIBASE_VERSION'];
-  document.getElementById('ver71_revision_32').innerHTML = json_data['scale0.1']['ver71']['info']['ALTIBASE_REVISION'];
   document.getElementById('ver72_os_32').innerHTML = json_data['scale0.1']['ver72']['info']['OS'];
   document.getElementById('ver72_version_32').innerHTML = json_data['scale0.1']['ver72']['info']['ALTIBASE_VERSION'];
-  document.getElementById('ver72_revision_32').innerHTML = json_data['scale0.1']['ver72']['info']['ALTIBASE_REVISION'];
   document.getElementById('ver71_os_64').innerHTML = json_data['scale0.1']['ver71']['info']['OS'];
   document.getElementById('ver71_version_64').innerHTML = json_data['scale0.1']['ver71']['info']['ALTIBASE_VERSION'];
-  document.getElementById('ver71_revision_64').innerHTML = json_data['scale0.1']['ver71']['info']['ALTIBASE_REVISION'];
   document.getElementById('ver72_os_64').innerHTML = json_data['scale0.1']['ver72']['info']['OS'];
   document.getElementById('ver72_version_64').innerHTML = json_data['scale0.1']['ver72']['info']['ALTIBASE_VERSION'];
-  document.getElementById('ver72_revision_64').innerHTML = json_data['scale0.1']['ver72']['info']['ALTIBASE_REVISION'];
-
-
-
 }
 
 /* 제이슨 파싱 */
@@ -478,7 +471,7 @@ function readTextFile(url, callback) {
 
 /* 실행 */
 new Promise(() => {
-  readTextFile("/al_json", function (text) {
+  readTextFile("multi_scale_data.json", function (text) {
     console.log(text);
     json_data = JSON.parse(text);
     get_env_info();
@@ -638,8 +631,6 @@ btn_SUpdate_32.onclick = function () {
 btn_ISUpdate_32.onclick = function () {
   btn('thread32', 'Insert+Select+Update');
 };
-
-
 
 btn_Insert_64.onclick = function () {
   btn('thread64', 'Insert');
