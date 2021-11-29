@@ -1,0 +1,54 @@
+body
+{
+     background-color: #030227;
+}
+.chart_frame
+{
+    display: flex;    
+    overflow: hidden;
+    margin-top: 3%;
+    margin-left: 8%;
+}
+
+.chart_sql
+{
+    border: 1px solid springgreen;
+    width: 60rem;
+}
+
+.chart_cpu_ram_frame
+{
+    margin-left: 3rem;
+}
+.chart_cpu 
+{
+    border: 1px solid springgreen;
+
+    width: 30rem;
+    height: 20rem; 
+    margin-bottom: 3rem;
+
+}
+
+.chart_memory
+{
+    border: 1px solid springgreen;
+    width: 30rem;
+    height: 20rem;
+    margin: 0;
+}
+
+.chart_avr
+{
+    display: flex;
+    border: 1px solid springgreen;
+    width: 90rem;
+}
+
+
+
+.button_frame
+{
+    margin-top: 5rem;
+    text-align: center;
+}

@@ -1,0 +1,129 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'show/fullPage.js-master/dist/fullpage.css' %}">
+    <link rel="stylesheet" href="{% static 'show/main.css' %}">
+    <link rel="stylesheet" href="{% static 'show/graph_test.css' %}">
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li data-menuanchor="section1"><a href="#section1">section1</a></li>
+                <li data-menuanchor="section2"><a href="#section2">section2</a></li>
+                <li data-menuanchor="section3"><a href="#section3">section3</a></li>
+                <li data-menuanchor="section4"><a href="#section4">section4</a></li>
+                <li data-menuanchor="section5"><a href="#section5">section5</a></li>
+                <li data-menuanchor="section6"><a href="#section6">section6</a></li>
+                <li data-menuanchor="section7"><a href="#section7">section7</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="fullpage">
+        <section class="section">
+            <div class="slide">
+                <h3>slide1</h3>
+                <div class='chart_frame'>
+                    <div class='chart_sql'>
+                        <canvas id="chart_sql_32" width="100%"></canvas>
+                        <div class="button_frame">
+                            <input type="button" class="btn_Insert" id="btn_Insert_32" value="Insert">
+                            <input type="button" class="btn_Update" id="btn_Update_32" value="Update">
+                            <input type="button" class="btn_Select" id="btn_Select_32" value="Select">
+                            <input type="button" class="btn_Delete" id="btn_Delete_32" value="Delete">
+                            <div></div>
+                            <input type="button" class="btn_Insert+Select" id="btn_Insert+Select_32"
+                                value="Insert+Select">
+                            <input type="button" class="btn_Select+Update" id="btn_Select+Update_32"
+                                value="Select+Update">
+                            <input type="button" class="btn_Insert+Select+Update" id="btn_Insert+Select+Update_32"
+                                value="Select+Update">
+                        </div>
+                    </div>
+                    <div class="chart_cpu_ram_frame">
+                        <div class='chart_cpu'>
+                            <canvas id="chart_cpu_32" width="100%"></canvas>
+                        </div>
+                        <div class='chart_memory'>
+                            <canvas id="chart_memory_32" width="100%"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <h3>slide2</h3>
+                <div class="chart_frame">
+                    <div class="chart_avr">
+                        <canvas id="chart_avr_32" width="100%"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="slide">
+                <h2>section 2</h2>
+                <div class='chart_frame'>
+                    <div class='chart_sql'>
+                        <canvas id="chart_sql_64" width="100%"></canvas>
+                        <div class="button_frame">
+                            <input type="button" class="btn_Insert" id="btn_Insert_64" value="Insert">
+                            <input type="button" class="btn_Update" id="btn_Update_64" value="Update">
+                            <input type="button" class="btn_Select" id="btn_Select_64" value="Select">
+                            <input type="button" class="btn_Delete" id="btn_Delete_64" value="Delete">
+                            <div></div>
+                            <input type="button" class="btn_Insert+Select" id="btn_Insert+Select_64"
+                                value="Insert+Select">
+                            <input type="button" class="btn_Select+Update" id="btn_Select+Update_64"
+                                value="Select+Update">
+                            <input type="button" class="btn_Insert+Select+Update" id="btn_Insert+Select+Update_64"
+                                value="Select+Update">
+                        </div>
+                    </div>
+                    <div class="chart_cpu_ram_frame">
+                        <div class='chart_cpu'>
+                            <canvas id="chart_cpu_64" width="100%"></canvas>
+                        </div>
+                        <div class='chart_memory'>
+                            <canvas id="chart_memory_64" width="100%"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <h3>slide2</h3>
+                <div class="chart_frame">
+                    <div class="chart_avr">
+                        <canvas id="chart_avr_64" width="100%"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="section fp-auto-height">
+            <h2>footer</h2>
+        </footer>
+    </main>
+
+    <script src="{% static 'show/multi_scale_data.json' %}" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{% static 'show/graph_test.js' %}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="{% static 'show/fullPage.js-master/dist/fullpage.js' %}"></script>
+
+    <script src="{% static 'show/main.js' %}"></script>
+</body>
+
+</html>
