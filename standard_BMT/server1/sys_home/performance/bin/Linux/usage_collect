@@ -1,0 +1,9 @@
+top - 15:52:53 up 26 days,  4:36, 14 users,  load average: 0.32, 0.38, 0.34
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.2%us,  0.1%sy,  0.0%ni, 99.7%id,  0.1%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  32715392k total, 21489656k used, 11225736k free,  3416576k buffers
+Swap: 16777212k total,        0k used, 16777212k free,  9458272k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+28882 judia888  20   0 3470m 1.2g  78m S 449.5  3.9   1:02.73 altibase          
+
