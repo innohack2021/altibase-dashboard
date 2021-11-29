@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,20 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Altibase Project</title>
     <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="{%  static 'show/images/favicon/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{%  static 'show/images/favicon/apple-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{%  static 'show/images/favicon/apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{%  static 'show/images/favicon/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{%  static 'show/images/favicon/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{%  static 'show/images/favicon/apple-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{%  static 'show/images/favicon/apple-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{%  static 'show/images/favicon/apple-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{%  static 'show/images/favicon/apple-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{%  static 'show/images/favicon/android-icon-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{%  static 'show/images/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{%  static 'show/images/favicon/favicon-96x96.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{%  static 'show/images/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{%  static 'show/images/favicon/manifest.json' %}">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -34,10 +36,10 @@
     <!-- FONT AWESOME SCRIPT -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <link rel="stylesheet" href="css/fullpage.min.css">
+    <link rel="stylesheet" href="{%  static 'show/css/fullpage.min.css' %}">
     
     
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="{%  static 'show/css/main.css' %}">
 </head>
 <body>
     <aside class="fixed-nav">
@@ -52,13 +54,13 @@
         <div class="section video header" data-anchor="firstPage">
             <div class="video-container">
                 <video loop muted playsinline data-autoplay id="bgvideo">
-                    <source src="video/abstract.mp4" type="video/mp4">
+                    <source src="{%  static 'show/video/abstract.mp4' %}" type="video/mp4">
                 </video>
             </div>
             <nav>
                 <h1 class="logo">
                     <a href="">
-                        <img src="images/logo_icon_white.png" alt="logo_icon">
+                        <img src="{%  static 'show/images/logo_icon_white.png' %}" alt="logo_icon">
                         <span>Altibase Project</span>
                     </a>
                 </h1>
@@ -259,16 +261,16 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
         <!--GRAPH PART-->
-        <script src="multi_scale_data.json" type="text/javascript"></script>
+        <script src="{%  static 'show/multi_scale_data.json' %}" type="text/javascript"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
         <!-- MAIN PAGE FULLPAGE JS-->
-        <script src="js/fullpage.min.js"></script>
+        <script src="{%  static 'show/js/fullpage.min.js' %}"></script>
         
-        <script src="js/main.js"></script>
-        <script src="js/main2.js"></script>
+        <script src="{%  static 'show/js/main.js' %}"></script>
+        <script src="{%  static 'show/js/main2.js' %}"></script>
         
-    <script src="js/graph_test.js"></script>
+    <script src="{%  static 'show/js/graph_test.js' %}"></script>
 </body>
 
 </html>
